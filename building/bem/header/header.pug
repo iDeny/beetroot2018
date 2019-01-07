@@ -1,0 +1,31 @@
+include ../form/form
+
+mixin header
+  header.header.layout.layout__overlayed
+    .header_container.layout_section
+      .header_main
+        .header_logo
+          img(src='img/logo.png', alt='')
+          .header_info
+            .header_title Юридическое агентство Санкт-Петербурга
+            .header_subtitle Legal agency of St. Petersburg (основано в 2004 году)
+        .header_contacts
+          .header_phone +7 (812) 407-10-22
+          a.header_email(href='mailto:nfo@la-advokat.ru') nfo@la-advokat.ru
+      .header_content
+        h1.h1.h1__invert
+          | Юридическая консультация
+          br
+          |  по вопросам долевого строительства
+        .layout_form
+          h4.h4.h4__invert
+            | Оставьте заявку и получите 
+            span.h4_strong бесплатную
+            |  консультацию
+          +form
+      .header_scroll
+        svg(xmlns='https://www.w3.org/2000/svg', width='29', height='80')
+          path(fill-rule='evenodd', fill='#FFF', d='M23.9 45.9a14.03 14.03 0 0 1-9.86 4.1h-.08c-3.87 0-7.17-1.36-9.87-4.08A13.67 13.67 0 0 1 0 35.96V22.6C0 15.53 5.65 9.16 12.67 8.67c-.1-2.46-.67-4.21-1.73-5.15-1-.89-2.2-.75-2.46-.75h-.05c-.7.1-1.41-.34-1.53-1.1C6.77.9 7.24.22 8 .12a3 3 0 0 1 .77-.1 6.29 6.29 0 0 1 3.9 1.5c1.69 1.45 2.6 3.8 2.7 7.14 3.59.37 6.59 1.88 9 4.54A13.59 13.59 0 0 1 28 22.6v13.36c0 3.8-1.6 7.41-4.1 9.94zm1.4-23.3c0-2.95-1-5.51-3.03-7.69-2.02-2.17-4.47-3.6-7.4-3.6h-1.5c-3 0-5.5 1.31-7.57 3.5a10.94 10.94 0 0 0-3.1 7.8v13.35c0 3.1 1.13 5.79 3.34 8a11.1 11.1 0 0 0 8 3.35c6.11.08 11.26-5.25 11.26-11.35V22.6zm-8.63 3.7c-.61.6-1.37.92-2.24.92h-.8a3.1 3.1 0 0 1-2.3-.95 3.09 3.09 0 0 1-.95-2.25v-5.66c0-.9.32-1.68.95-2.3a3.14 3.14 0 0 1 2.3-.95h.8c.87 0 1.62.32 2.24.95.63.64.95 1.4.95 2.3v5.66a3.1 3.1 0 0 1-.95 2.27zm-1.76-7.94c0-.3-.22-.5-.48-.5h-.8c-.3 0-.54.2-.54.5v5.66c0 .12.04.25.14.34.2.1.32.15.4.15h.8c.26 0 .48-.22.48-.49v-5.66z')
+          path(stroke='#FFF', stroke-width='2', stroke-linecap='round', fill='none', d='M7 56l7 7 7-7')
+          path(stroke='#FFF', stroke-width='2', stroke-linecap='round', opacity='.5', fill='none', d='M7 64l7 7 7-7')
+          path(stroke='#FFF', stroke-width='2', stroke-linecap='round', opacity='.15', fill='none', d='M7 72l7 7 7-7')

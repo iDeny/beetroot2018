@@ -1,0 +1,27 @@
+.buildings {
+    display: flex;
+    &_list {
+        width: 400px;
+    }
+    &_item {
+        padding: 15px 30px;
+        cursor: pointer;
+        &:not(&__active):hover {
+            background: #f8f8f8;
+            color: #733840;
+        }
+        &__active {
+            background: white;
+            box-shadow: inset 0 -1px 0 0 #dfdfdf;
+        }
+    }
+    &_title {
+        margin: 50px 0 30px;
+        font: bold 24px/1 @fontOpenSans;
+    }
+    &_content {
+        width: 650px;
+        background: white;
+        padding: 50px 70px;
+    }
+}

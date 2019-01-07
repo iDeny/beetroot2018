@@ -1,0 +1,77 @@
+include data/consult
+include data/discount
+
+include bem/buildings/buildings
+include bem/consult/consult
+include bem/discount/discount
+include bem/footer/footer
+include bem/form/form
+include bem/header/header
+include bem/map/map
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='style/css/style.css')
+    script(src='js/script.js')
+  body
+    +header
+    section.layout
+      .layout_section
+        h2.h2 Наши услуги
+        .layout_row
+          each consult in consultOur
+            .layout_col-4
+              +consult(['consult__card', 'consult__card-big'], consult.image, consult.text, false)
+        h3.h3 Поможем в случаях:
+        .layout_row
+          each consult in consultHelpMain
+            .layout_col-3
+              +consult(['consult__card'], consult.image, consult.text, true)
+        .layout_row
+          each consult in consultHelpMinor
+            .layout_col-3
+              +consult(['consult__card'], consult.image, consult.text, true)
+    section.layout
+      .layout_section
+        h2.h2 Проблемные объекты
+        +buildings
+    section.layout.layout__form.layout__overlayed.layout__help
+      .layout_section
+        h2.h2.h2__invert Правовая помощь дольщикам
+        .layout_form
+          +form
+    section.layout
+      .layout_section
+        h2.h2
+          | Распространённые нарушения
+          br
+          |  со стороны застройщиков
+        p.p
+          | В нашей практике выявлены наиболее распространённые нарушения даже у лидеров рынка:
+        .layout_row
+          each consult in consultViolationsMain
+            .layout_col-3
+              +consult([], consult.image, consult.text, true)
+        .layout_row
+          each consult in consultViolationsMinor
+            .layout_col-3
+              +consult([], consult.image, consult.text, true)
+    section.layout.layout__form.layout__overlayed.layout__free
+      .layout_section
+        h2.h2.h2__invert
+          | Запишитесь на 
+          span.h2_strong бесплатный
+          |  первичный приём
+        .layout_form
+          +form
+    section.layout
+      .layout_section
+        h2.h2 Скидки
+        p.p Для наших клиентов действует система скидок:
+        +discount
+    +map
+    +footer

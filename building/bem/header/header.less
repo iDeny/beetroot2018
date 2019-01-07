@@ -1,0 +1,51 @@
+.header {
+    height: 100vh;
+    background: url(../../img/header.jpg);
+    background-size: cover;
+    min-height: 520px; /* to fit all content */
+    &_container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &_main {
+        display: flex;
+        justify-content: space-between;
+        color: @colorInvert;
+    }
+    &_logo {
+        display: flex;
+        padding: 24px 0;
+    }
+    &_info {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font: 300 14px/24px @fontOpenSans;
+    }
+    &_title {
+        border-bottom: 1px solid fadeout(white, 60%);
+    }
+    &_contacts {
+        padding: 24px 0;
+        text-align: right;
+    }
+    &_phone {
+        font: 500 18px/1.2 @fontOpenSans;
+    }
+    &_email {
+        font: 14px/1.2 @fontOpenSans;
+        color: @colorInvert;
+    }
+    &_content {
+        margin: auto;
+    }
+    &_scroll {
+        width: 27px;
+        padding: 18px 13px 10px;
+        background: fadeout(black, 50%);
+        border-radius: 25px;
+        margin: auto auto 50px;
+    }
+}

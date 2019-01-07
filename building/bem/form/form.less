@@ -1,0 +1,26 @@
+.form {
+    display: inline-flex;
+    &_input {
+        border: 0;
+        padding: 0 20px;
+        border-radius: 5px 0 0 5px;
+        background-color: white;
+        width: 330px;
+        height: 58px;
+    }
+    &_button {
+        border: 0;
+        padding: 0;
+        background-color: @colorAccent;
+        border-radius: 0 5px 5px 0;
+        width: 200px;
+        height: 58px;
+        font: 700 14px/1 @fontOpenSans;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            opacity: .9;
+        }
+    }
+}

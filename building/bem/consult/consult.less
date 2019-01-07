@@ -1,0 +1,40 @@
+.consult {
+    &_header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &_button {
+        position: absolute;
+        font: bold 13px/1 @fontOpenSans;
+        background: @colorStrong;
+        color: @colorOverlay;
+        border-radius: 5px;
+        padding: 16px;
+        bottom: 0;
+        margin: 30px auto;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            opacity: .9;
+        }
+    }
+    &_text {
+        margin: 25px 0;
+    }
+    &__card &_text {
+        margin: 0;
+        background: white;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font: bold 16px/20px @fontOpenSans;
+    }
+    &__card-big &_text {
+        font: bold 14px/18px @fontOpenSans;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,13 @@
+//
+    @param {array} consultModifiers - bem class modifiers
+    @param {string} image - src for image
+    @param {string} text - inner text
+    @param {boolean} showButton - show or hide button
+
+mixin consult(consultModifiers, image, text, showButton)
+  .consult(class=consultModifiers)
+    header.consult_header
+      img.consult_image(src=image, alt='')
+      if showButton
+        a.consult_button(href='#') получить консультацию
+    .consult_text= text

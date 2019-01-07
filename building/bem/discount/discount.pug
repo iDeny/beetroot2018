@@ -1,0 +1,7 @@
+mixin discount
+  .discount
+    each item in discountItems
+      .discount_item
+        h5.h5 Скидка
+        .discount_amount= item.amount
+        .discount_text= item.text

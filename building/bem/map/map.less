@@ -1,0 +1,27 @@
+.map {
+    position: relative;
+    background: url(../../img/map.jpg);
+    height: 600px;
+    &::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(@colorOverlay, transparent);
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 360px;
+    }
+    &_contacts {
+        display: flex;
+        justify-content: center;
+    }
+    &_phone {
+        color: @colorInvert;
+        padding: 0 50px;
+    }
+    &_email {
+        color: @colorInvert;
+        padding: 0 50px;
+    }
+}
