@@ -1,5 +1,9 @@
 .form {
     display: inline-flex;
+    @media @deviceTablet {
+        flex-wrap: wrap;
+        width: 100%;
+    }
     &_input {
         border: 0;
         padding: 0 20px;
@@ -7,6 +11,11 @@
         background-color: white;
         width: 330px;
         height: 58px;
+        @media @deviceTablet {
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
     &_button {
         border: 0;
@@ -21,6 +30,10 @@
         cursor: pointer;
         &:hover {
             opacity: .9;
+        }
+        @media @deviceTablet {
+            border-radius: 5px;
+            width: 100%;
         }
     }
 }

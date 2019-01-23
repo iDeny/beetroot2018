@@ -1,20 +1,28 @@
 .consult {
     &_header {
         position: relative;
-        display: flex;
         justify-content: center;
     }
+    &_image {
+        width: 100%;
+        display: block;
+    }
     &_button {
+        box-sizing: border-box;
         position: absolute;
         font: bold 13px/1 @fontOpenSans;
         background: @colorStrong;
         color: @colorOverlay;
         border-radius: 5px;
         padding: 16px;
-        bottom: 0;
         margin: 30px auto;
         text-transform: uppercase;
         text-decoration: none;
+        left: 0;
+        bottom: 0;
+        margin: 30px 20px;
+        width: calc(100% - 40px);
+        text-align: center;
         &:hover {
             opacity: .9;
         }
