@@ -1,0 +1,14 @@
+.h4 {
+  font: bold 18px/1 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #262626;
+  padding: 30px;
+  margin: 0;
+}
+.h4_strong {
+  color: #ead01e;
+}
+.h4__invert {
+  color: white;
+}

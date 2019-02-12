@@ -1,0 +1,28 @@
+.h2 {
+  font: bold 36px/48px 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #262626;
+  position: relative;
+  padding: 50px 0 60px;
+  margin: 0;
+}
+.h2::after {
+  content: '';
+  position: absolute;
+  width: 201px;
+  height: 14px;
+  background: url(../../img/h2.png);
+  top: 100%;
+  left: 50%;
+  margin: -40px -100px;
+}
+.h2_strong {
+  color: #ead01e;
+}
+.h2__invert {
+  color: white;
+}
+.h2__invert::after {
+  background: url(../../img/h2__inverted.png);
+}

@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  background: #1c1c1c;
+}
+.footer_card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_card-item {
+  margin: 0 20px;
+}
+.footer_copyright {
+  padding: 40px 0;
+  font: 300 13px/1.2 'Open Sans', sans-serif;
+  color: #bcbcbc;
+}

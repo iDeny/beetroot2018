@@ -1,0 +1,9 @@
+body {
+  font: 14px/20px 'Open Sans', sans-serif;
+  color: #575757;
+  background: #f0f0f0;
+  min-width: 320px;
+}
+a:hover {
+  text-decoration: none;
+}

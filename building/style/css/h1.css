@@ -1,0 +1,9 @@
+.h1 {
+  font: bold 40px/1.5 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #262626;
+}
+.h1__invert {
+  color: white;
+}

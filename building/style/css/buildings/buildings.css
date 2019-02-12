@@ -1,0 +1,27 @@
+.buildings {
+  display: flex;
+}
+.buildings_list {
+  width: 400px;
+}
+.buildings_item {
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.buildings_item:not(.buildings_item__active):hover {
+  background: #f8f8f8;
+  color: #733840;
+}
+.buildings_item__active {
+  background: white;
+  box-shadow: inset 0 -1px 0 0 #dfdfdf;
+}
+.buildings_title {
+  margin: 50px 0 30px;
+  font: bold 24px/1 'Open Sans', sans-serif;
+}
+.buildings_content {
+  width: 650px;
+  background: white;
+  padding: 50px 70px;
+}

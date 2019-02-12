@@ -1,0 +1,46 @@
+.consult_header {
+  position: relative;
+  justify-content: center;
+}
+.consult_image {
+  width: 100%;
+  display: block;
+}
+.consult_button {
+  box-sizing: border-box;
+  position: absolute;
+  font: bold 13px/1 'Open Sans', sans-serif;
+  background: #ead01e;
+  color: #150a0c;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 30px auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  left: 0;
+  bottom: 0;
+  margin: 30px 20px;
+  width: calc(100% - 40px);
+  text-align: center;
+}
+.consult_button:hover {
+  opacity: 0.9;
+}
+.consult_text {
+  margin: 25px 0;
+}
+.consult__card .consult_text {
+  margin: 0;
+  background: white;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font: bold 16px/20px 'Open Sans', sans-serif;
+}
+.consult__card-big .consult_text {
+  font: bold 14px/18px 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}

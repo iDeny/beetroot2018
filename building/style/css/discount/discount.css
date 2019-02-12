@@ -1,0 +1,13 @@
+.discount {
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+}
+.discount_item {
+  flex: 1;
+}
+.discount_amount {
+  font: 800 60px/1 'Open Sans', sans-serif;
+  color: #bf0508;
+  margin: 20px 0;
+}
